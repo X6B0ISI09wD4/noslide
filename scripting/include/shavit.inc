@@ -1358,7 +1358,7 @@ stock void Shavit_PrintToChatAll(const char[] format, any ...)
 	}
 }
 
-public SharedPlugin __pl_shavit =
+public SharedPlugin __pl_shàvit =
 {
 	name = "shavit",
 	// SM bug? commented until it's fixed
@@ -1369,86 +1369,3 @@ public SharedPlugin __pl_shavit =
 	required = 0
 #endif
 };
-
-#if !defined REQUIRE_PLUGIN
-public void __pl_shavit_SetNTVOptional()
-{
-	MarkNativeAsOptional("Shavit_ChangeClientStyle");
-	MarkNativeAsOptional("Shavit_DeleteReplay");
-	MarkNativeAsOptional("Shavit_FinishMap");
-	MarkNativeAsOptional("Shavit_ForceHUDUpdate");
-	MarkNativeAsOptional("Shavit_FormatChat");
-	MarkNativeAsOptional("Shavit_GetBhopStyle");
-	MarkNativeAsOptional("Shavit_GetChatStrings");
-	MarkNativeAsOptional("Shavit_GetClientJumps");
-	MarkNativeAsOptional("Shavit_GetClientPB");
-	MarkNativeAsOptional("Shavit_GetClientTime");
-	MarkNativeAsOptional("Shavit_GetClientTrack");
-	MarkNativeAsOptional("Shavit_GetDatabase");
-	MarkNativeAsOptional("Shavit_GetDB");
-	MarkNativeAsOptional("Shavit_GetHUDSettings");
-	MarkNativeAsOptional("Shavit_GetMapTier");
-	MarkNativeAsOptional("Shavit_GetMapTiers");
-	MarkNativeAsOptional("Shavit_GetOrderedStyles");
-	MarkNativeAsOptional("Shavit_GetPerfectJumps");
-	MarkNativeAsOptional("Shavit_GetPlayerPB");
-	MarkNativeAsOptional("Shavit_GetPoints");
-	MarkNativeAsOptional("Shavit_GetRank");
-	MarkNativeAsOptional("Shavit_GetRankedPlayers");
-	MarkNativeAsOptional("Shavit_GetRankForTime");
-	MarkNativeAsOptional("Shavit_GetRecordAmount");
-	MarkNativeAsOptional("Shavit_GetReplayBotCurrentFrame");
-	MarkNativeAsOptional("Shavit_GetReplayBotFirstFrame");
-	MarkNativeAsOptional("Shavit_GetReplayBotIndex");
-	MarkNativeAsOptional("Shavit_GetReplayBotStyle");
-	MarkNativeAsOptional("Shavit_GetReplayBotTrack");
-	MarkNativeAsOptional("Shavit_GetReplayBotType");
-	MarkNativeAsOptional("Shavit_GetReplayData");
-	MarkNativeAsOptional("Shavit_GetReplayFrameCount");
-	MarkNativeAsOptional("Shavit_GetReplayLength");
-	MarkNativeAsOptional("Shavit_GetReplayName");
-	MarkNativeAsOptional("Shavit_GetReplayTime");
-	MarkNativeAsOptional("Shavit_GetStrafeCount");
-	MarkNativeAsOptional("Shavit_GetStyleCount");
-	MarkNativeAsOptional("Shavit_GetStyleSettings");
-	MarkNativeAsOptional("Shavit_GetStyleStrings");
-	MarkNativeAsOptional("Shavit_GetSync");
-	MarkNativeAsOptional("Shavit_GetTimeForRank");
-	MarkNativeAsOptional("Shavit_GetTimer");
-	MarkNativeAsOptional("Shavit_GetTimerStatus");
-	MarkNativeAsOptional("Shavit_GetWorldRecord");
-	MarkNativeAsOptional("Shavit_GetWRCount");
-	MarkNativeAsOptional("Shavit_GetWRName");
-	MarkNativeAsOptional("Shavit_GetWRRecordID");
-	MarkNativeAsOptional("Shavit_GetWRTime");
-	MarkNativeAsOptional("Shavit_HasStyleAccess");
-	MarkNativeAsOptional("Shavit_HijackAngles");
-	MarkNativeAsOptional("Shavit_InsideZone");
-	MarkNativeAsOptional("Shavit_IsClientCreatingZone");
-	MarkNativeAsOptional("Shavit_IsKZMap");
-	MarkNativeAsOptional("Shavit_IsPaused");
-	MarkNativeAsOptional("Shavit_IsPracticeMode");
-	MarkNativeAsOptional("Shavit_IsReplayDataLoaded");
-	MarkNativeAsOptional("Shavit_LoadSnapshot");
-	MarkNativeAsOptional("Shavit_MarkKZMap");
-	MarkNativeAsOptional("Shavit_OpenStatsMenu");
-	MarkNativeAsOptional("Shavit_PauseTimer");
-	MarkNativeAsOptional("Shavit_PrintToChat");
-	MarkNativeAsOptional("Shavit_Rankings_DeleteMap");
-	MarkNativeAsOptional("Shavit_ReloadLeaderboards");
-	MarkNativeAsOptional("Shavit_ReloadReplay");
-	MarkNativeAsOptional("Shavit_ReloadReplays");
-	MarkNativeAsOptional("Shavit_Replay_DeleteMap");
-	MarkNativeAsOptional("Shavit_RestartTimer");
-	MarkNativeAsOptional("Shavit_ResumeTimer");
-	MarkNativeAsOptional("Shavit_SaveSnapshot");
-	MarkNativeAsOptional("Shavit_SetPracticeMode");
-	MarkNativeAsOptional("Shavit_SetReplayData");
-	MarkNativeAsOptional("Shavit_StartTimer");
-	MarkNativeAsOptional("Shavit_StopChatSound");
-	MarkNativeAsOptional("Shavit_StopTimer");
-	MarkNativeAsOptional("Shavit_WR_DeleteMap");
-	MarkNativeAsOptional("Shavit_ZoneExists");
-	MarkNativeAsOptional("Shavit_Zones_DeleteMap");
-}
-#endif
